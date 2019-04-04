@@ -1,0 +1,17 @@
+<div class="container">
+
+  <div class="header">
+    <h3>{{name}} x {{items.length}}</h3>
+    <div class="button-group">
+      <button (click)="decrement()" [disabled]="items.length <= minItem">-</button>
+      <button (click)="increment()" [disabled]="items.length >= maxItem">+</button>
+    </div>
+  </div>
+
+  <div class="items">
+    <div class="item" *ngFor="let it of items">
+      <app-item [name]="it.name" [value]="it.value" (valueChange)="it.value=$event;update();"></app-item>
+    </div>
+  </div>
+
+</div>

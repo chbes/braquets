@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'variables.scss';
+
+html,
+body {
+  height: 100%;
+  // width: 100vw;
+}
+
+body {
+  margin: 0;
+  font-family: $font-family;
+  color: $text-color;
+  background-color: $background-color;
+}
+
+.loading-spinner {
+    color: $text-color;
+}
+
+.noscript {
+    color: $text-color;
+}

@@ -1,0 +1,37 @@
+<!-- <header class="toolbar">
+  <h1><b class="rose">B</b><b class="jaune">R</b><b class="rouge">A</b>QUETS</h1>
+</header> -->
+
+<!-- <header class="toolbar">
+  <img src="assets/logo.svg" class="dots" alt="dots" />
+  <h1>BRAQUETS</h1>
+</header> -->
+
+<header class="toolbar">
+  <img src="assets/icon.svg" class="logo" alt="logo" />
+  <h1>BRAQUETS</h1>
+</header>
+
+<div class="container">
+  <div class="item">
+    <app-chart [data]="gears"></app-chart>
+    <h4 *ngIf="smallScreen" class="advise">SWITCH TO LANDSCAPE MODE FOR BETTER GRAPH DISPLAY</h4>
+  </div>
+
+  <div class="item">
+    <app-manager [name]="'CHAINRINGS'" [prefix]="'C'" [defaultValue]="36" [maxItem]="3" [minItem]="1" [init]="[52,36]"
+      (itemsChange)="chainrings=$event;update();">
+    </app-manager>
+  </div>
+
+  <div class="item">
+    <app-manager [name]="'COGS'" [prefix]="'#'" [defaultValue]="16" [maxItem]="12" [minItem]="1"
+      [init]="[34,30,28,26,24,22,20]" (itemsChange)="cogs=$event;update();">
+    </app-manager>
+  </div>
+</div>
+
+<footer>
+  <h4>BRAQUETS develop with <strong>♥</strong> by <a href="https://github.com/chbes">chbes</a></h4>
+  <h4>v1.0</h4>
+</footer>
