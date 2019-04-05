@@ -1,11 +1,8 @@
 @import 'variables.scss';
 
 .container {
-  // background-color: rgba(88, 222, 255, 0.575);
   border: 2px solid $text-color;
-  // padding: 12px;
   display: flex;
-  // justify-content: space-between;
   flex-direction: column;
 }
 
@@ -13,7 +10,6 @@ h4 {
   text-align: center;
   font-size: 23px;
   font-weight: 500;
-  // width: 100%;
   margin: 0;
   background: $text-color;
   color: $background-color;
@@ -31,7 +27,6 @@ input {
   background-color: transparent;
   border: none;
   border-bottom: 2px solid $text-color;
-  // width: 100%;
   padding: 8px 0;
   margin: 8px auto;
 }

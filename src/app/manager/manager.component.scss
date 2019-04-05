@@ -1,7 +1,6 @@
 @import 'variables.scss';
 
 .container {
-  // background-color: rgba(255, 88, 88, 0.493);
   padding: 12px;
   margin: 15px 0;
   display: flex;
@@ -43,26 +42,16 @@
     button:disabled {
       color: $disabled-color;
       border-color: $disabled-color;
-      //background: rgba(126, 126, 126, 0.3);
     }
   }
 }
 
-
 .items {
   display: flex;
-  // flex-wrap: nowrap;
   justify-content: space-around;
-  // flex-direction: column;
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
-
-  // @media screen and (min-width: $break-xsmall) {
-  //   flex-direction: row;
-  //   align-items: center;
-  //   flex-wrap: wrap;
-  // }
 
   .item {
     margin: 15px 0;

@@ -56,12 +56,9 @@ export class ChartComponent implements OnInit {
       titleFontFamily: 'Roboto, sans-serif',
       titleFontSize: 23,
       titleFontColor: '#FAFAFA',
-      // titleSpacing: '6',
-      // titleMarginBottom: '6',
       bodyFontFamily: 'Roboto, sans-serif',
       bodyFontSize: 25,
       bodyFontColor: '#FAFAFA',
-      // bodySpacing: '4',
       displayColors: false
 
     }
@@ -130,9 +127,7 @@ export class ChartComponent implements OnInit {
     }
   ];
 
-  constructor() {
-    // this.data = [];
-  }
+  constructor() { }
 
   ngOnInit() { }
 
